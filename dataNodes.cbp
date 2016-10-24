@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="nodeTemplate" />
+		<Option title="dataNodes" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -32,9 +32,22 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="analyVar.h" />
+		<Unit filename="Design_Notes/AbstrNode.dia" />
+		<Unit filename="Design_Notes/nodeInt.dia" />
+		<Unit filename="Design_Notes/readme.md" />
+		<Unit filename="LICENSE" />
+		<Unit filename="README.md" />
+		<Unit filename="design_notes.md" />
+		<Unit filename="include/node.h" />
+		<Unit filename="include/nodeDbl.h" />
+		<Unit filename="include/nodeInt.h" />
+		<Unit filename="include/nodeStr.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="readme.md" />
+		<Unit filename="node.md" />
+		<Unit filename="src/node.cpp" />
+		<Unit filename="src/nodeDbl.cpp" />
+		<Unit filename="src/nodeInt.cpp" />
+		<Unit filename="src/nodeStr.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

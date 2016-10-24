@@ -24,16 +24,6 @@ using namespace std;
 class node
 {
     public:
-        /** Default constructor */
-        node();
-        /** Default destructor */
-        virtual ~node();
-
-        /** */
-        node(string nId);
-
-        /** */
-        node(string nId, int nPosNumber);
 
         /** Access nodeId
          * \return The current value of nodeId
@@ -86,15 +76,15 @@ class node
         /** Access nodeData
          * \return The current value of nodeData
          */
-        void* GetnodeData() { return nodeData; }
+        virtual void* GetnodeData() = 0;
         /** Set nodeData
          * \param val New value to set
          */
-        void SetnodeData(void* val) { nodeData = val; }
+        virtual void SetnodeData(void* val) = 0;
 
-        void serialize();
-        void display();
-        string tostring();
+        virtual void serialize();
+        virtual void display();
+        virtual string tostring();
 
     protected:
 
@@ -105,7 +95,8 @@ class node
         string nodeType; //!< Member variable "nodeType"
         void* nodePrev; //!< Member variable "nodePrev"
         void* nodeNext; //!< Member variable "nodeNext"
-        void* nodeData; //!< Member variable "nodeData"
+        void* nodeData; //!< pure virtualMember variable "nodeData"
+
 };
 
 #endif // NODE_H
