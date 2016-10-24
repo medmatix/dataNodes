@@ -48,14 +48,12 @@
 #include <initializer_list>
 #include <boost/any.hpp>
 
-//#include "node.hpp"
+#include "node.hpp"
 
 
 using namespace std;
 
 /** default constructor */
-
-
         node::node() {
             varName = "";
             varType = "";
