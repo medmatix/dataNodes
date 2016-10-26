@@ -31,7 +31,6 @@
  *
  * &copy; 2016 David York
  */
-ub_Repositories/git-cola/dataNodes/include
 
 #include "node.h"
 

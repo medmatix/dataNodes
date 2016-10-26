@@ -15,27 +15,38 @@ class nodeStr : public node
         /** Access nodeData
          * \return The current value of nodeData
          */
-        void* GetnodeData() { return nodeData; }
+        void* GetnodeDataPtr() { return nodeDataPtr; }
+
+
+        /** Access nodeData as vector<int> data
+         * \return The current value of nodeData
+         */
+        vector<string> GetnodeData() { return vnodeData; }
+
         /** Set nodeData
          * \param val New value to set
          */
-
         void SetnodeData(void* val) {
-            nodeData = val;
-            nStrData = static_cast<vector<string>* >( nodeData);
-            vStrData = *nStrData;
+            nodeDataPtr = val;
+            vector<string>* nodeData;
+            nodeData = static_cast<vector<string>* >( nodeDataPtr);
+            vnodeData = *nodeData;
         }
+
+        vector<string> getDataRange(int start, int ending);
 
         void serialize();
         void display();
+        string getNodeJSON();
         string tostring();
+
 
     protected:
 
     private:
-        vector<string>* nStrData; //!< Member variable "nodeData"
-        void* nodeData;
-        vector<string> vStrData;
+
+        void* nodeDataPtr;//!< Member variable "nodeData"
+        vector<string> vnodeData;
 };
 
 #endif // NODESTR_H

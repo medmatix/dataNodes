@@ -15,27 +15,37 @@ class nodeDbl : public node
         /** Access nodeData
          * \return The current value of nodeData
          */
-        void* GetnodeData() { return nodeData; }
+        void* GetnodeDataPtr() { return nodeDataPtr; }
         /** Set nodeData
          * \param val New value to set
          */
+        /** Access nodeData as vector<int> data
+         * \return The current value of nodeData
+         */
+        vector<double> GetnodeData() { return vnodeData; }
 
+        /** Set nodeData
+         * \param val New value to set
+         */
         void SetnodeData(void* val) {
-            nodeData = val;
-            nDblData = static_cast<vector<double>* >( nodeData);
-            vDblData = *nDblData;
+            nodeDataPtr = val;
+            vector<double>* nodeData;
+            nodeData = static_cast<vector<double>* >( nodeDataPtr);
+            vnodeData = *nodeData;
         }
+
+        vector<double> getDataRange(int start, int ending);
 
         void serialize();
         void display();
+        string getNodeJSON();
         string tostring();
 
     protected:
 
     private:
-        vector<double>* nDblData; //!< Member variable "nodeData"
-        void* nodeData;
-        vector<double> vDblData;
+        void* nodeDataPtr;//!< Member variable "nodeData"//!< Member variable "nodeData"
+        vector<double> vnodeData;
 };
 
 #endif // NODEDBL_H

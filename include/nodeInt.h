@@ -11,31 +11,45 @@ class nodeInt : public node
         nodeInt();
         /** Default destructor */
         virtual ~nodeInt();
+        /** meta-data only constructor */
+        nodeInt(string nId, int nPosNumb,string nName, string nType, int nElems);
+        /** all-data constructor */
+        nodeInt(string nId, int nPosNumb,string nName, string nType, int nElems, void* nPrev, void* nNext, void* nData);
+
 
         /** Access nodeData
+         * as vector
          * \return The current value of nodeData
          */
-        void* GetnodeData() { return nodeData; }
+        void* GetnodeDataPtr() { return nodeDataPtr; }
+
+        /** Access nodeData as vector<int> data
+         * \return The current value of nodeData
+         */
+        vector<int> GetnodeData() { return vnodeData; }
+
         /** Set nodeData
          * \param val New value to set
          */
-
         void SetnodeData(void* val) {
-            nodeData = val;
-            nIntData = static_cast<vector<int>* >( nodeData);
-            vIntData = *nIntData;
+            nodeDataPtr = val;
+            vector<int>* nodeData;
+            nodeData = static_cast<vector<int>* >( nodeDataPtr);
+            vnodeData = *nodeData;
         }
+
+        vector<int> getDataRange(int start, int ending);
 
         void serialize();
         void display();
+        string getNodeJSON();
         string tostring();
 
     protected:
 
     private:
-        vector<int>* nIntData; //!< Member variable "nodeData"
-        void* nodeData;
-        vector<int> vIntData;
+        void* nodeDataPtr;//!< Member variable "nodeData"
+        vector<int> vnodeData;
 };
 
 #endif // NODEINT_H

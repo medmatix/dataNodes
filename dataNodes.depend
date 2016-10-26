@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1477335151 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/node.cpp
+1477508945 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/node.cpp
 	"node.h"
 
 1477338785 /home/david/Projects/Github_Repositories/git-cola/dataNodes/include/node.h
@@ -21,13 +21,13 @@
 	<initializer_list>
 	<boost/any.hpp>
 
-1477337929 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/nodeInt.cpp
+1477513611 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/nodeInt.cpp
 	"nodeInt.h"
 
 1477338785 /home/david/Projects/Github_Repositories/git-cola/dataNodes/include/nodeInt.h
 	<node.h>
 
-1477338348 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/main.cpp
+1477510521 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/main.cpp
 	<cstdio>
 	<cstdlib>
 	<cctype>
@@ -47,10 +47,18 @@
 	<boost/any.hpp>
 	<node.h>
 	<nodeInt.h>
+	<nodeDbl.h>
+	<nodeStr.h>
+	<nodeCat.h>
 
-1477341770 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/nodeDbl.cpp
-	"include/nodeDbl.h"
+1477513286 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/nodeDbl.cpp
+	"nodeDbl.h"
 
-1477340125 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/nodeStr.cpp
+1477513685 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/nodeStr.cpp
 	"nodeStr.h"
+
+1477510276 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/nodeCat.cpp
+
+1477513501 source:/home/david/Projects/Github_Repositories/git-cola/dataNodes/src/nodeCat.cpp
+	"nodeCat.h"
 

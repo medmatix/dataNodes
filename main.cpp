@@ -17,6 +17,9 @@
 #include <boost/any.hpp>
 #include <node.h>
 #include <nodeInt.h>
+#include <nodeDbl.h>
+#include <nodeStr.h>
+#include <nodeCat.h>
 
 using namespace std;
 
@@ -27,7 +30,20 @@ int main() {
 
     nodeInt* nInt = new nodeInt();  // !! remember 'new' returns a pointer !!!!!!
 
-    cout << "  built nodeInt n  " << endl;
+    cout << "  built nodeInt nInt  " << endl;
+
+    nodeDbl* nDbl = new nodeDbl();  // !! remember 'new' returns a pointer !!!!!!
+
+    cout << "  built nodeDbl nDbl  " << endl;
+
+    nodeStr* nStr = new nodeStr();  // !! remember 'new' returns a pointer !!!!!!
+
+    cout << "  built nodeStr nStr  " << endl;
+
+    nodeCat* nCat = new nodeCat();  // !! remember 'new' returns a pointer !!!!!!
+
+    cout << "  built nodeCat nCat  " << endl;
+
     return 0;
 
 }

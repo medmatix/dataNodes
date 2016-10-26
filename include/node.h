@@ -73,13 +73,11 @@ class node
          * \param val New value to set
          */
         void SetnodeNext(void* val) { nodeNext = val; }
-        /** Access nodeData
+
+        /** Access nodeData (nodeDataPtr) as pointer
          * \return The current value of nodeData
          */
-        virtual void* GetnodeData() = 0;
-        /** Set nodeData
-         * \param val New value to set
-         */
+        virtual void* GetnodeDataPtr() = 0;
         virtual void SetnodeData(void* val) = 0;
 
         virtual void serialize();
@@ -95,7 +93,7 @@ class node
         string nodeType; //!< Member variable "nodeType"
         void* nodePrev; //!< Member variable "nodePrev"
         void* nodeNext; //!< Member variable "nodeNext"
-        void* nodeData; //!< pure virtualMember variable "nodeData"
+        void* nodeDataPtr; //!< pure virtualMember variable "nodeData"
 
 };
 

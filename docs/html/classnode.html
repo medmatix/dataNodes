@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -87,22 +88,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classnode-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">node Class Reference</div>  </div>
+<div class="title">node Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="node_8h_source.html">node.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for node:</div>
+<div class="dyncontent">
+<div class="center"><img src="classnode__inherit__graph.png" border="0" usemap="#node_inherit__map" alt="Inheritance graph"/></div>
+<map name="node_inherit__map" id="node_inherit__map">
+<area shape="rect" id="node2" href="classnode_dbl.html" title="nodeDbl" alt="" coords="5,80,76,107"/><area shape="rect" id="node3" href="classnode_int.html" title="nodeInt" alt="" coords="100,80,165,107"/><area shape="rect" id="node4" href="classnode_str.html" title="nodeStr" alt="" coords="190,80,257,107"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82669b7358b50bd8d7888d7df4ff8dfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a82669b7358b50bd8d7888d7df4ff8dfa">node</a> ()</td></tr>
-<tr class="separator:a82669b7358b50bd8d7888d7df4ff8dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482f83436a89f09d289b26144d817adf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a482f83436a89f09d289b26144d817adf">~node</a> ()</td></tr>
-<tr class="separator:a482f83436a89f09d289b26144d817adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3814ab732a4f1fbd0de57e7251b28d13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a3814ab732a4f1fbd0de57e7251b28d13">node</a> (string nId)</td></tr>
-<tr class="separator:a3814ab732a4f1fbd0de57e7251b28d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affaef8320049b4fe1fc8957f4e28cd0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#affaef8320049b4fe1fc8957f4e28cd0c">node</a> (string nId, int nPosNumber)</td></tr>
-<tr class="separator:affaef8320049b4fe1fc8957f4e28cd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24038289ad6c74e79675f2e6157eac4e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a24038289ad6c74e79675f2e6157eac4e">GetnodeId</a> ()</td></tr>
 <tr class="separator:a24038289ad6c74e79675f2e6157eac4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e302e4958aebd93f935abb9fc52fb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a6e302e4958aebd93f935abb9fc52fb81">SetnodeId</a> (string val)</td></tr>
@@ -127,40 +127,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae80f949e59a6ef3b23478747fbed6f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c134f8b3f7f07486fbbcb6b661fd1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a20c134f8b3f7f07486fbbcb6b661fd1c">SetnodeNext</a> (void *val)</td></tr>
 <tr class="separator:a20c134f8b3f7f07486fbbcb6b661fd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40bd7d5f48afd528b9de1a8b9d5dafa2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a40bd7d5f48afd528b9de1a8b9d5dafa2">GetnodeData</a> ()</td></tr>
-<tr class="separator:a40bd7d5f48afd528b9de1a8b9d5dafa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a054702328c8fc5e0caf3dafcc0a6419a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a054702328c8fc5e0caf3dafcc0a6419a">SetnodeData</a> (void *val)</td></tr>
-<tr class="separator:a054702328c8fc5e0caf3dafcc0a6419a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c421fbe52a800acfbbead65490d9c5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a7c421fbe52a800acfbbead65490d9c5b">serialize</a> ()</td></tr>
-<tr class="separator:a7c421fbe52a800acfbbead65490d9c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db16ab95e1a86eb42d7c630ee03b3e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a5db16ab95e1a86eb42d7c630ee03b3e4">display</a> ()</td></tr>
+<tr class="memitem:aae9ebd165cc1b1fcf31048de37b1e905"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#aae9ebd165cc1b1fcf31048de37b1e905">GetnodeData</a> ()=0</td></tr>
+<tr class="separator:aae9ebd165cc1b1fcf31048de37b1e905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c8b0f56a6486f318bf5e673cd0be70"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a42c8b0f56a6486f318bf5e673cd0be70">SetnodeData</a> (void *val)=0</td></tr>
+<tr class="separator:a42c8b0f56a6486f318bf5e673cd0be70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6414fa4dc7be7736ccd12695009a01eb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a6414fa4dc7be7736ccd12695009a01eb">serialize</a> ()</td></tr>
+<tr class="separator:a6414fa4dc7be7736ccd12695009a01eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db16ab95e1a86eb42d7c630ee03b3e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#a5db16ab95e1a86eb42d7c630ee03b3e4">display</a> ()</td></tr>
 <tr class="separator:a5db16ab95e1a86eb42d7c630ee03b3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad920febefb81d78ea4d17f4897adb05f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#ad920febefb81d78ea4d17f4897adb05f">tostring</a> ()</td></tr>
+<tr class="memitem:ad920febefb81d78ea4d17f4897adb05f"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnode.html#ad920febefb81d78ea4d17f4897adb05f">tostring</a> ()</td></tr>
 <tr class="separator:ad920febefb81d78ea4d17f4897adb05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="node_8h_source.html#l00024">24</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a82669b7358b50bd8d7888d7df4ff8dfa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">node::node </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Default constructor </p>
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l00041">41</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a482f83436a89f09d289b26144d817adf"></a>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5db16ab95e1a86eb42d7c630ee03b3e4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -168,7 +150,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">node::~node </td>
+          <td class="memname">void node::display </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -180,77 +162,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Default destructor </p>
+
+<p>Reimplemented in <a class="el" href="classnode_dbl.html#a96a776141ad9f039db14efc5dea4d65a">nodeDbl</a>, <a class="el" href="classnode_int.html#a67212b2b182ee68d135563686631e0af">nodeInt</a>, and <a class="el" href="classnode_str.html#a556b7c554e9f53ee616bfc47855bc5d1">nodeStr</a>.</p>
 
 <p>Definition at line <a class="el" href="node_8cpp_source.html#l00046">46</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3814ab732a4f1fbd0de57e7251b28d13"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">node::node </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>nId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l00051">51</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="affaef8320049b4fe1fc8957f4e28cd0c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">node::node </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>nId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nPosNumber</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l00056">56</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5db16ab95e1a86eb42d7c630ee03b3e4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void node::display </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l00066">66</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a40bd7d5f48afd528b9de1a8b9d5dafa2"></a>
+<a class="anchor" id="aae9ebd165cc1b1fcf31048de37b1e905"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,7 +177,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* node::GetnodeData </td>
+          <td class="memname">virtual void* node::GetnodeData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -266,13 +185,13 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Access nodeData </p><dl class="section return"><dt>Returns</dt><dd>The current value of nodeData </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00089">89</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Implemented in <a class="el" href="classnode_dbl.html#afd59f7467661a88a0e48cd7b817c9afe">nodeDbl</a>, <a class="el" href="classnode_int.html#ac2ce2582ece0acd96116e7b8f2710b8c">nodeInt</a>, and <a class="el" href="classnode_str.html#a264c35c3c9c2a7ce1bb6ea8734e84462">nodeStr</a>.</p>
 
 </div>
 </div>
@@ -298,7 +217,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Access nodeId </p><dl class="section return"><dt>Returns</dt><dd>The current value of nodeId </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00041">41</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00031">31</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +243,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Access nodeName </p><dl class="section return"><dt>Returns</dt><dd>The current value of nodeName </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00057">57</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00047">47</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +269,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Access nodeNext </p><dl class="section return"><dt>Returns</dt><dd>The current value of nodeNext </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00081">81</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00071">71</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +295,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Access nodePosNumber </p><dl class="section return"><dt>Returns</dt><dd>The current value of nodePosNumber </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00049">49</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00039">39</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +321,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Access nodePrev </p><dl class="section return"><dt>Returns</dt><dd>The current value of nodePrev </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00073">73</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00063">63</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -428,28 +347,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Access nodeType </p><dl class="section return"><dt>Returns</dt><dd>The current value of nodeType </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00065">65</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00055">55</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7c421fbe52a800acfbbead65490d9c5b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void node::serialize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l00061">61</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a054702328c8fc5e0caf3dafcc0a6419a"></a>
+<a class="anchor" id="a6414fa4dc7be7736ccd12695009a01eb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -457,7 +359,34 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void node::SetnodeData </td>
+          <td class="memname">ub_Repositories git cola dataNodes include void node::serialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classnode_dbl.html#a4f3b63c57cf11aad7cc74b5d95ceef38">nodeDbl</a>, <a class="el" href="classnode_int.html#ab2e92bf503bae2522a6becc0507f819d">nodeInt</a>, and <a class="el" href="classnode_str.html#ae466102e592ad2b2a4dad2c5f502c7c5">nodeStr</a>.</p>
+
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l00041">41</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42c8b0f56a6486f318bf5e673cd0be70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void node::SetnodeData </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
@@ -466,7 +395,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -477,7 +406,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00093">93</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Implemented in <a class="el" href="classnode_dbl.html#a0aa2f93dc4bf86af924ab4090487d03e">nodeDbl</a>, <a class="el" href="classnode_int.html#a94b2e5c0da72cef354b0431ffb7477d7">nodeInt</a>, and <a class="el" href="classnode_str.html#a227823d8d52f465221d2f590fe5f9abe">nodeStr</a>.</p>
 
 </div>
 </div>
@@ -509,7 +438,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00045">45</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00035">35</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +470,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00061">61</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00051">51</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +502,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00085">85</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00075">75</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -605,7 +534,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00053">53</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00043">43</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +566,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00077">77</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00067">67</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
@@ -669,13 +598,16 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_8h_source.html#l00069">69</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
+<p>Definition at line <a class="el" href="node_8h_source.html#l00059">59</a> of file <a class="el" href="node_8h_source.html">node.h</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ad920febefb81d78ea4d17f4897adb05f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">string node::tostring </td>
@@ -684,9 +616,16 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l00071">71</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classnode_dbl.html#a2b4d3d689179251a6f16feefc960c9ff">nodeDbl</a>, <a class="el" href="classnode_int.html#aa69a5613fff53bfa5b154303f7f5e1fa">nodeInt</a>, and <a class="el" href="classnode_str.html#aa69318094d69cadcbf8b78ae81e5403f">nodeStr</a>.</p>
+
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l00051">51</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -697,7 +636,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 24 2016 14:33:18 for dataNodes by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 24 2016 17:45:58 for dataNodes by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

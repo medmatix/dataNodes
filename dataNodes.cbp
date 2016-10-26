@@ -33,18 +33,24 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Design_Notes/AbstrNode.dia" />
+		<Unit filename="Design_Notes/nodeCat.dia" />
+		<Unit filename="Design_Notes/nodeIDbl.dia" />
+		<Unit filename="Design_Notes/nodeIStr.dia" />
 		<Unit filename="Design_Notes/nodeInt.dia" />
 		<Unit filename="Design_Notes/readme.md" />
 		<Unit filename="LICENSE" />
 		<Unit filename="README.md" />
 		<Unit filename="design_notes.md" />
 		<Unit filename="include/node.h" />
+		<Unit filename="include/nodeCat.h" />
 		<Unit filename="include/nodeDbl.h" />
 		<Unit filename="include/nodeInt.h" />
 		<Unit filename="include/nodeStr.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="node.md" />
+		<Unit filename="nodeCat.cpp" />
 		<Unit filename="src/node.cpp" />
+		<Unit filename="src/nodeCat.cpp" />
 		<Unit filename="src/nodeDbl.cpp" />
 		<Unit filename="src/nodeInt.cpp" />
 		<Unit filename="src/nodeStr.cpp" />
