@@ -1,0 +1,6 @@
+{
+  "name": "Datanodes",
+  "tagline": "a class template for the node datatype",
+  "body": "# dataNodes\r\nclasses for the nodes datatype\r\n\r\n###Overview\r\nA polymorphic approach to data nodes involves a parent or abstract node class with derivative or specialization classes for the different data-type to be worked with in data scientific applications.\r\n\r\nThis specializations are:\r\n\r\n  -  string type nodes\r\n  -  integer type nodes\r\n  -  double type nodes and category or factor type nodes, this latter is intern a specialization of the integer type to account for the levels and the level names in the categories\r\n  \r\n## Design notes\r\nsee the design notes directory here which contains the UML and commentary of the development planning for nodes.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
